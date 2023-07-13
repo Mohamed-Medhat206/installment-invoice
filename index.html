@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>عقد قسط</title>
+
+</head>
+<body>
+    <header>
+        <div class="data1">
+            <h1> متجر اوزون الالكتروني</h1>
+            <p>الاول في المملكه العربيه السعودية</p>
+            <h3>المملكه العربيه السعوديه</h3>
+            <h3>الكتروني</h3>
+        </div>
+        <div class="image"><img src="images/logo.png" width="200px" alt=""></div>
+        <div class="data2">
+            <h2>OZON STORE ELECTRONIC</h2>
+            <p>The first store in the kingdom on Saudi Arabia</p>
+            <h3>Kingdom on Saudi Arabia Electronic Shop</h3>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h3 style="text-align: center;">عقد بيع بالتقسيط</h3>
+        <p>
+            <span> اليوم : </span>
+            <b>
+            <span id="dayElement"></span>
+            </b>
+        </p>
+        <p>التاريخ :
+            <b>
+            <script>
+                const today = new Date();                    
+                const year = today.getFullYear();
+                const month = today.getMonth() + 1;
+                const day = today.getDate();                    
+                const dateString = `${year}/${month.toString().padStart(2, '0')}/${day.toString().padStart(2, '0')}`;                    
+                document.write(dateString);
+                </script>
+                </b>
+        </p><b></b>
+        <p>نعم انا السید :/<b> شذى الدوسري</b> برقم جوال :/ <b>0509643664</b> وعنوانه :/<b>وادي الدواسر الجوبه</b></p>
+        <p>أقر واعترف وانا في حالتي الشرعیة وبكامل قواي العقلیة بأني في ذمتي للمؤسسة المدعوة :/<b> اوزون ستور</b></p>
+        <p>مبلغ وقدره :/<b> 3599 (ثلاثه ألاف و خمسمائه و تسعه و تسعون ) ریال فقط.</b></p>
+        <p>وذلك قیمة عن ما تبقى من ثمن جھاز :/<b> ابل ایفون 14 برو ، 128 جیجا ،اسود</b></p>
+        <p>على ان یدفع المبلغ على اقساط شھریة متتالیة ومستمرة بدون انقطاع بما فیھا شھر رمضان والاعیاد</p>
+        <p>قیمة الدفعة الشھریة :<b>/ 149.00 ( مائه و تسعه و أریعون ) ریال فقط</b> اعتبارا من تاریخ :/ <span><b>
+            <script>
+                const today1 = new Date();                    
+                const year1 = today1.getFullYear();
+                const month1 = today1.getMonth() + 1;
+                const day1 = today1.getDate();                    
+                const dateString1 = `${year1}/${month1.toString().padStart(2, '0')}/${day1.toString().padStart(2, '0')}`;                    
+                document.write(dateString1);
+                </script>
+                </b></span></p>
+        <p>نھایة المبلغ المذكور اعلاه وأنني بسداد الاقساط في موعدھا بدون تأخر عن أي قسط عن موعده المحدد فإني ملتزم التزاما
+            تاما بسداد المبلغ المتبقي كاملا دفعة واحدة.</p>
+        <p>.كما انني أقر على نفسي بأنه لا یوجد التزامات مالیة ولا كفالات غرامیة وقد اذنت والله خیر الشاھدین</p>
+    
+    <div class="container">
+        <div class="one">
+            <p>الإسم:/ شذى الدوسري.</p>
+            <p>التوقیع :/ ....................</p>
+        </div>
+        <div class="two">
+            <p>الختم</p>
+            <img src="images/logo.png"width="100px" alt="">
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    </main>
+    <footer>
+        <h3>www.ozonstores.com &nbsp; &nbsp;  متجر اوزون الالكتروني</h3>
+        <hr>
+    </footer>
+</body>
+<script>
+    // Create an array of Arabic weekdays
+var arabicWeekdays = [
+  "الأحد",
+  "الاثنين",
+  "الثلاثاء",
+  "الأربعاء",
+  "الخميس",
+  "الجمعة",
+  "السبت"
+];
+
+// Get the current date
+var currentDate = new Date();
+
+// Get the day of the week
+var dayIndex = currentDate.getDay();
+
+// Get the Arabic weekday from the array
+var arabicDay = arabicWeekdays[dayIndex];
+
+// Display the Arabic weekday on the page
+document.getElementById("dayElement").textContent = arabicDay;
+
+</script>
+</html>
